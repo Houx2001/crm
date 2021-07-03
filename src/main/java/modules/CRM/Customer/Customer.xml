@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.skyve.org/xml/document" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Customer" xsi:schemaLocation="http://www.skyve.org/xml/document ../../../schemas/document.xsd">
+    <persistent name="CRM_Customer"/>
+    <singularAlias>Customer</singularAlias>
+    <pluralAlias>Customers</pluralAlias>
+    <bizKey expression="Customer - {username}"/>
+    <attributes>
+        <text required="true" name="username">
+            <displayName>username</displayName>
+            <length>50</length>
+        </text>
+        <integer required="true" name="phone">
+            <displayName>phone</displayName>
+        </integer>
+        <date name="birthday">
+            <displayName>birthday</displayName>
+        </date>
+        <text name="address">
+            <displayName>address</displayName>
+            <length>200</length>
+        </text>
+    </attributes>
+</document>
